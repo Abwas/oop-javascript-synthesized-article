@@ -30,7 +30,7 @@ Reminders, code examples and exercises to help us understand JavaScript concepts
 
 **Examples**:
 
-> [Function-level scope](source/variable-scope/function-level-scope.js) - [Function-level scope test](source/test/variable-scope/function-level-scope.js)
+> [Function-level scope](source/variable-scope/function-level-scope.js) - [Function-level scope test](source/test/variable-scope/function-level-scope.spec.js)
 >
 > [Block-level scope]() - [Block-level scope test]()
 
