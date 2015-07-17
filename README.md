@@ -20,7 +20,7 @@ Reminders, code examples and exercises to help us understand JavaScript concepts
 
 - Is the context in which the variables exists.
 - Specifies from where a variable is accessible.
-- Can be either **local** or **global** scope.o
+- Can be either **local** or **global** scope
 
 ### Local Scope ([function|block]-level scope)
 
@@ -28,7 +28,9 @@ Reminders, code examples and exercises to help us understand JavaScript concepts
 - Variables declared inside a function or declared using the `let` keyword are accessible within that function.
 - Function within another function can access the variables of the outer function.
 
-> [Function-level scope]() - [Function-level scope test]()
+**Examples**:
+
+> [Function-level scope](source/variable-scope/function-level-scope.js) - [Function-level scope test](source/test/variable-scope/function-level-scope.js)
 >
 > [Block-level scope]() - [Block-level scope test]()
 
