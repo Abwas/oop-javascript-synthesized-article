@@ -96,7 +96,7 @@ console.log( lang );
 
 An interesting use case for the `let` keyword is the following one:
 
-> [`let use case`](source/variable-scope/let-use-case.js) - [`let` use case test](source/test/variable-scope.spec.js)
+> [`let` use case](source/variable-scope/let-use-case.js) - [`let` use case test](source/test/variable-scope.spec.js)
 
 ## References
 

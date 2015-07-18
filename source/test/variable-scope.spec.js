@@ -1,10 +1,10 @@
 // Require our dependencies
-var expect        = require( 'chai' ).expect;
-var rooted        = require( 'rooted' );
-var variableScope = rooted( 'variable-scope' );
-var showBook      = variableScope.showBook;
-var innerGuitar   = variableScope.innerGuitar;
-var outerGuitar   = variableScope.outerGuitar;
+var expect          = require( 'chai' ).expect;
+var rooted          = require( 'rooted' );
+var variableScope   = rooted( 'variable-scope' );
+var showBook        = variableScope.showBook;
+var innerGuitar     = variableScope.innerGuitar;
+var outerGuitar     = variableScope.outerGuitar;
 var checkOddNumbers = variableScope.checkOddNumbers;
 
 describe( 'Function-level scope', function() {
