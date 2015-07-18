@@ -32,11 +32,11 @@ Reminders, code examples and exercises to help us understand JavaScript concepts
 
 **Examples**:
 
-> [Function-level scope](source/variable-scope/function-level-scope.js) - [Function-level scope test](source/test/variable-scope/variable-scope.spec.js)
+> [Function-level scope](source/variable-scope/function-level-scope.js) - [Function-level scope test](source/test/variable-scope.spec.js)
 
 ### Global Scope
 
-> [Non-Block-level scope](source/variable-scope/non-block-level-scope.js) - [Non-Block-level scope test](source/test/variable-scope/variable-scope.spec.js)
+> [Non-Block-level scope](source/variable-scope/non-block-level-scope.js) - [Non-Block-level scope test](source/test/variable-scope.spec.js)
 
 ### Block Scope (ES6)
 
