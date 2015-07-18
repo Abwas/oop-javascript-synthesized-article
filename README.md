@@ -58,7 +58,7 @@ You **should pay attention** in basically 3 parts:
 ### Block Scope (ES6)
 
 - You can use the `let` keyword to properly create a block-level scope in your code
-- You should pay attention if when mix `var` and `let` keywords
+- You should pay attention when mix `var` and `let` keywords
 
 
 ```js
@@ -76,8 +76,22 @@ console.log( lang );
 // "ES5"
 ```
 
+But **attention** here:
 ```js
+let lang = 'ES5';
 
+if ( lang ) {
+  var lang = 'ES6';
+  console.log( lang );
+}
+
+console.log( lang );
+
+// This code will through an error
+// Uncaught TypeError: Duplicate declaration "lang"
+// The reason is that we declared `let` in the global scope
+// so when we use `var` inside the curly braces, we'll actually
+// reassign the same variable, which is an action not allowed
 ```
 
 ## References
