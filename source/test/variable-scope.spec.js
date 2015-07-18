@@ -1,6 +1,7 @@
 // Require our dependencies
 var expect   = require( 'chai' ).expect;
-var showBook = require( '../../variable-scope/function-level-scope' );
+var rooted   = require( 'rooted' );
+var showBook = rooted( 'variable-scope' ).showBook;
 
 describe( 'Function-level scope', function() {
   
