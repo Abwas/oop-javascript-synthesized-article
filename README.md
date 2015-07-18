@@ -1,5 +1,8 @@
 # Object-Oriented Programming in JavaScript Synthesized
 
+[![Build Status](https://travis-ci.org/ericdouglas/oop-javascript-synthesized-article.svg)](https://travis-ci.org/ericdouglas/oop-javascript-synthesized-article)
+[![Coverage Status](https://coveralls.io/repos/ericdouglas/oop-javascript-synthesized-article/badge.svg?branch=master&service=github)](https://coveralls.io/github/ericdouglas/oop-javascript-synthesized-article?branch=master)
+
 Reminders, code examples and exercises to help us understand JavaScript concepts and the OOP paradigm.
 
 ## Table of Content
@@ -14,7 +17,7 @@ Reminders, code examples and exercises to help us understand JavaScript concepts
 - [OOP JavaScript]()
 - [Callback]()
 - [Fluent API]()
-- [Bibliography](#bibliography)
+- [References](#references)
 
 ## Variable Scope
 
@@ -32,8 +35,10 @@ Reminders, code examples and exercises to help us understand JavaScript concepts
 
 > [Function-level scope](source/variable-scope/function-level-scope.js) - [Function-level scope test](source/test/variable-scope/function-level-scope.spec.js)
 >
+> [Non-Block-level scope]() - [Non-Block-level scope test]()
+>
 > [Block-level scope]() - [Block-level scope test]()
 
-## Bibliography
+## References
 
 1. [JavaScript Variable Scope and Hoisting Explained](http://javascriptissexy.com/javascript-variable-scope-and-hoisting-explained/)

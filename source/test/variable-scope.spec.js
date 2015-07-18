@@ -1,7 +1,10 @@
 // Require our dependencies
-var expect   = require( 'chai' ).expect;
-var rooted   = require( 'rooted' );
-var showBook = rooted( 'variable-scope' ).showBook;
+var expect        = require( 'chai' ).expect;
+var rooted        = require( 'rooted' );
+var variableScope = rooted( 'variable-scope' );
+var showBook      = variableScope.showBook;
+var innerGuitar   = variableScope.innerGuitar;
+var outerGuitar   = variableScope.outerGuitar;
 
 describe( 'Function-level scope', function() {
   
@@ -11,3 +14,10 @@ describe( 'Function-level scope', function() {
 
 });
 
+describe( 'Non-block-level scope', function() {
+
+  it( 'Should return the same value for inner and outer variables', function() {
+    expect( innerGuitar ).to.equal( outerGuitar );
+  });
+
+});
