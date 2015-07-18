@@ -21,17 +21,17 @@ Reminders, code examples and exercises to help us understand JavaScript concepts
 
 ## About
 
-This guide follows a unusual didactics and a different approach. The reader should spend some time figuring out how all of those pieces fit together!
+This guide follows a **unusual didactics** and a **different approach**. The reader **should** spend some time figuring out **how** all of those pieces fit together!
 
-Although the time spent consuming this material will be longer than in an usual article, you will actually see, in practice, how to link all the informations explained.
+Although the time spent consuming this material will be longer than in an *usual* article, you will actually see, **in practice**, how to link all the informations explained.
 
-You should pay attention in basically 3 parts:
+You **should pay attention** in basically 3 parts:
 
 1. Short explanation, listing the main concepts that you need to know.
 2. Functions that implement the concepts explained.
 3. Test to prove that what we assume is correct.
 
-Enjoy the <strike>puzzle</strike> article! B-)
+**Enjoy the <strike>puzzle</strike> article! B-)**
 
 ## Variable Scope
 
