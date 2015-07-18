@@ -3,6 +3,7 @@ node_js:
   - "0.12"
   - "0.11"
   - "0.10"
+  - "iojs"
 before_install: "cd ./source"
 script: "make test-travis"
 after_script: "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
