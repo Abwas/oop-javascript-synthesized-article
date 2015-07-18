@@ -15,7 +15,6 @@ Reminders, code examples and exercises to help us understand JavaScript concepts
 - [Prototype]()
 - [Apply, call & bind]()
 - [OOP JavaScript]()
-- [Callback]()
 - [Fluent API]()
 - [References](#references)
 
@@ -33,10 +32,14 @@ Reminders, code examples and exercises to help us understand JavaScript concepts
 
 **Examples**:
 
-> [Function-level scope](source/variable-scope/function-level-scope.js) - [Function-level scope test](source/test/variable-scope/function-level-scope.spec.js)
->
-> [Non-Block-level scope]() - [Non-Block-level scope test]()
->
+> [Function-level scope](source/variable-scope/function-level-scope.js) - [Function-level scope test](source/test/variable-scope/variable-scope.spec.js)
+
+### Global Scope
+
+> [Non-Block-level scope](source/variable-scope/non-block-level-scope.js) - [Non-Block-level scope test](source/test/variable-scope/variable-scope.spec.js)
+
+### Block Scope (ES6)
+
 > [Block-level scope]() - [Block-level scope test]()
 
 ## References
