@@ -53,6 +53,24 @@ You **should pay attention** in basically 3 parts:
 
 ### Global Scope
 
+- **Always** declare your variables using a keyword (`var`, `let` or `const`), or it will occur...
+
+```js
+var hi = 'Hey!';
+
+function hello( name ) {
+	hi = 'Hello, ';
+  
+  return hi + name;
+}
+
+console.log( hello( 'Eric' ));
+// "Hello, Eric"
+
+console.log( hi ); /* the global variable was affected*/
+// "Hello, "
+```
+
 > [No Block-level scope](source/variable-scope/no-block-level-scope.js) - [No Block-level scope test](source/test/variable-scope.spec.js)
 
 ### Block Scope (ES6)
@@ -97,6 +115,22 @@ console.log( lang );
 An interesting use case for the `let` keyword is the following one:
 
 > [`let` use case](source/variable-scope/let-use-case.js) - [`let` use case test](source/test/variable-scope.spec.js)
+
+**ps**: The `const` keyword could be used as `let`. This new keyword also defines a block level scope. Its peculiarity is that once set, you won't be able to modify the value of the variable assigned with `const`.
+
+```js
+var name = 'Eric';
+
+if ( name ) {
+  const name = 'Eric Douglas';
+  console.log( name );
+}
+
+console.log( name );
+
+// "Eric Douglas"
+// "Eric"
+```
 
 ## References
 
