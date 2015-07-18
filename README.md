@@ -33,6 +33,8 @@ You **should pay attention** in basically 3 parts:
 
 **Enjoy the <strike>puzzle</strike> article! B-)**
 
+> See more **[here](https://medium.com/@ericdouglas_/why-i-chose-github-repositories-for-code-articles-d72d9c1034e6)**
+
 ## Variable Scope
 
 - Is the context in which the variables exists.
@@ -51,11 +53,32 @@ You **should pay attention** in basically 3 parts:
 
 ### Global Scope
 
-> [Non-Block-level scope](source/variable-scope/non-block-level-scope.js) - [Non-Block-level scope test](source/test/variable-scope.spec.js)
+> [No Block-level scope](source/variable-scope/no-block-level-scope.js) - [No Block-level scope test](source/test/variable-scope.spec.js)
 
 ### Block Scope (ES6)
 
-> [Block-level scope]() - [Block-level scope test]()
+- You can use the `let` keyword to properly create a block-level scope in your code
+- You should pay attention if when mix `var` and `let` keywords
+
+
+```js
+var lang = 'ES5';
+
+if ( lang ) {
+  let lang = 'ES6';
+  console.log( lang );
+}
+
+console.log( lang );
+
+// This code will output
+// "ES6"
+// "ES5"
+```
+
+```js
+
+```
 
 ## References
 

@@ -14,7 +14,7 @@ describe( 'Function-level scope', function() {
 
 });
 
-describe( 'Non-block-level scope', function() {
+describe( 'No Block-level scope', function() {
 
   it( 'Should return the same value for inner and outer variables', function() {
     expect( innerGuitar ).to.equal( outerGuitar );
