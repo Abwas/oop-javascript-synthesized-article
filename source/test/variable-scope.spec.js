@@ -25,8 +25,16 @@ describe( 'No Block-level scope', function() {
 
 describe( 'Block level scope', function() {
 
-  it( 'Should throw an error when a non number is passed as an argument', function() {
+  it( 'Should throw an TypeError when a non number is passed as an argument', function() {
     expect( checkOddNumbers.bind( checkOddNumbers, '13', 31 )).to.throw( TypeError );
+  });
+
+  it( 'Should throw an Error when a number lower than 0 is passed as the min argument', function() {
+    expect( checkOddNumbers.bind( checkOddNumbers, -13, 31 )).to.throw( Error );
+  });
+
+  it( 'Should throw an Error when min and max arguments are equals', function() {
+    expect( checkOddNumbers.bind( checkOddNumbers, 31, 31 )).to.throw( Error );
   });
 
   it( 'Should return an array with odd numbers', function() {
