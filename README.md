@@ -86,13 +86,17 @@ if ( lang ) {
 }
 
 console.log( lang );
-
-// This code will through an error
 // Uncaught TypeError: Duplicate declaration "lang"
+
+// This code will throw an error
 // The reason is that we declared `let` in the global scope
 // so when we use `var` inside the curly braces, we'll actually
 // reassign the same variable, which is an action not allowed
 ```
+
+An interesting use case for the `let` keyword is the following one:
+
+> [`let use case`]() - [`let` use case test]()
 
 ## References
 
