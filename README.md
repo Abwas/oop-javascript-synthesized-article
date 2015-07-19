@@ -163,7 +163,7 @@ var showUserFullName = function( user ) {
 
 **Exercise**
 
-What do you think that will be printed when this code runs?
+What do you think that will happen when you run this code?
 
 ```js
 var text = 'Outer text';
