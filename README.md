@@ -184,6 +184,7 @@ printStuff( 'Argument text', true );
 ```
 
 > **[Answer](http://jsbin.com/xikeku/edit?js,console)**
+
 ## Closures
 
 ### Use cases
