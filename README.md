@@ -187,8 +187,27 @@ printStuff( 'Argument text', true );
 
 ## Closures
 
-### Use cases
+- **Closure** is a function defined within another function
+- Can remember the environment in which it was created
+- Can access the **outer variables and arguments**, even if the outer function has been executed/returned
+- Store **references** to the outer function's variables - **attention**
+- When is expected that the outer function's variables will change, we should use an **IIFE** (Imediated Invoked Function Expression) to assign values for the closure
+- Closures lets you associate some data (environment) with a function that operates that data (parallel to OOP)
+- You can use a closure anywhere that you might use an object with only a single method
+
+### Use cases for Closures
+
+- Event-based situations: closures/callbacks - [more here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures#Practical_closures)
+- Emulate private methods (module pattern) - [more here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures#Emulating_private_methods_with_closures)
+- Closures in loops: A common mistake - [more here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures#Creating_closures_in_loops_A_common_mistake)
+- Performance Considerations - [more here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures#Performance_considerations)
 
 ## References
 
 1. [JavaScript Variable Scope and Hoisting Explained](http://javascriptissexy.com/javascript-variable-scope-and-hoisting-explained/)
+1. [Understand JavaScript Closures With Ease](http://javascriptissexy.com/understand-javascript-closures-with-ease/)
+1. [Closures - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures#Lexical_scoping)
+1. [How do JavaScript closures work?](http://stackoverflow.com/questions/111102/how-do-javascript-closures-work?page=1&tab=votes#tab-top)
+1. [What is a practical use for a closure in JavaScript?](http://stackoverflow.com/questions/2728278/what-is-a-practical-use-for-a-closure-in-javascript)
+1. [Practical Uses for Closures](https://medium.com/written-in-code/practical-uses-for-closures-c65640ae7304)
+1. [Why use "closure"?](http://howtonode.org/why-use-closure)
