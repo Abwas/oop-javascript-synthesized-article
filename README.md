@@ -161,6 +161,33 @@ var showUserFullName = function( user ) {
 };
 ```
 
+**Exercise**
+
+What do you think that will be printed when this code runs?
+
+```js
+var text = 'Outer text';
+
+function printStuff( text, repeat ) {
+    
+  if ( repeat ) {
+    console.log( text );
+  }
+  
+  var text = 'Inner text';
+  
+  console.log( text );
+}
+
+printStuff( text, true );
+printStuff( 'Argument text', true );
+```
+
+> **[Answer](http://jsbin.com/xikeku/edit?js,console)**
+## Closures
+
+### Use cases
+
 ## References
 
 1. [JavaScript Variable Scope and Hoisting Explained](http://javascriptissexy.com/javascript-variable-scope-and-hoisting-explained/)
