@@ -9,7 +9,7 @@ Reminders, code examples and exercises to help us understand JavaScript concepts
 
 - [About](#about)
 - [Variable Scope](#variable-scope)
-- [Hoisting]()
+- [Hoisting](#hoisting)
 - [Closure]()
 - [`this`]()
 - [Objects]()
@@ -135,6 +135,30 @@ console.log( name );
 
 // "Eric Douglas"
 // "Eric"
+```
+
+## Hoisting
+
+- Variables are hoisted (and **just declared**) to the top of their context
+- **Function declaration** are **hoisted** too, and overrides **variable declaration** (not variable **assignment**)
+- Function expression **are not ** hoisted
+
+```js
+// Variable declaration
+var user;
+
+// Variable assignment
+var user = 'Eric Douglas';
+
+// Function declaration
+function showUserFullName( user ) {
+  return user.firstName + ' ' + user.lastName;
+}
+
+// Function Expression
+var showUserFullName = function( user ) {
+  return user.firstName + ' ' + user.lastName;
+};
 ```
 
 ## References
