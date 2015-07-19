@@ -27,9 +27,9 @@ Although the time spent consuming this material will be longer than in an *usual
 
 You **should pay attention** in basically 3 parts:
 
-1. Short explanation, listing the main concepts that you need to know.
-2. Functions that implement the concepts explained.
-3. Tests to prove that what we assume is correct.
+1. Short explanation, listing the main concepts that you need to know
+2. Functions that implement the concepts explained
+3. Tests to prove that what we assume is correct
 
 **Enjoy the <strike>puzzle</strike> article! B-)**
 
@@ -37,15 +37,16 @@ You **should pay attention** in basically 3 parts:
 
 ## Variable Scope
 
-- Is the context in which the variables exists.
-- Specifies from where a variable is accessible.
+- Is the context in which the variables exists
+- Specifies from where a variable is accessible
 - Can be either **local** or **global** scope
 
 ### Local Scope ([function|block]-level scope)
 
-- Until [version 6](), JavaScript didn't have *block-level scope*, just *function-level scope*.
-- Variables declared inside a function or declared using the `let` keyword are accessible within that function.
-- Function within another function can access the variables of the outer function.
+- Until [version 6](), JavaScript didn't have *block-level scope*, just *function-level scope*
+- Variables declared **inside** a function or declared using the `let` keyword are **only** accessible within that function
+- Function within another function **can access** the variables of the **outer** function
+- **Local** variables have **priority**
 
 **Examples**:
 
@@ -71,13 +72,17 @@ console.log( hi ); /* the global variable was affected*/
 // "Hello, "
 ```
 
+- Variables declared **outside** a function are **globals**.
+- Assign a value to a variable without declare it add the variable to the **global context**
+- The context (when you use `this`) of `setTimeout` and `setInterval` is **global**
+- **Do not pollute the global scope!**
+
 > [No Block-level scope](source/variable-scope/no-block-level-scope.js) - [No Block-level scope test](source/test/variable-scope.spec.js)
 
 ### Block Scope (ES6)
 
 - You can use the `let` keyword to properly create a block-level scope in your code
 - You should pay attention when mix `var` and `let` keywords
-
 
 ```js
 var lang = 'ES5';
