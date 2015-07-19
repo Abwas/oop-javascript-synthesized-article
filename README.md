@@ -10,7 +10,7 @@ Reminders, code examples and exercises to help us understand JavaScript concepts
 - [About](#about)
 - [Variable Scope](#variable-scope)
 - [Hoisting](#hoisting)
-- [Closure]()
+- [Closures](#closures)
 - [`this`]()
 - [Objects]()
 - [Prototype]()
