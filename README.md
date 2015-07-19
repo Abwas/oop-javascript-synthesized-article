@@ -140,8 +140,8 @@ console.log( name );
 ## Hoisting
 
 - Variables are hoisted (and **just declared**) to the top of their context
-- **Function declaration** are **hoisted** too, and overrides **variable declaration** (not variable **assignment**)
-- Function expression **are not ** hoisted
+- **Function declaration** is **hoisted** too, and overrides **variable declaration** (not variable **assignment**)
+- Function expression **is not** hoisted
 
 ```js
 // Variable declaration
