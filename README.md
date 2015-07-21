@@ -214,6 +214,9 @@ printStuff( 'Argument text', true );
 - we can switch the context to another object by invoking the function with another object
 
 > [change-context.js](source/this/change-context.js) - [this.spec.js](source/test/this.spec.js)
+>
+> [this-in-callback.js](source/this/this-in-callback.js) - [this.spec.js](source/test/this.spec.js)
+
 
 ## References
 
