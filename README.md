@@ -213,7 +213,8 @@ printStuff( 'Argument text', true );
 - `this` has the value of the invoking object in most circumstances, howerver, there are few scenarios where `this` **does not**.
 - we can switch the context to another object by invoking the function with another object
 
-> [change-context.js]() - [this.spec.js]()
+> [change-context.js](source/this/change-context.js) - [this.spec.js](source/test/this.spec.js)
+
 ## References
 
 1. [JavaScript Variable Scope and Hoisting Explained](http://javascriptissexy.com/javascript-variable-scope-and-hoisting-explained/)
