@@ -202,6 +202,18 @@ printStuff( 'Argument text', true );
 - Closures in loops: A common mistake - [more here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures#Creating_closures_in_loops_A_common_mistake)
 - Performance Considerations - [more here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures#Performance_considerations)
 
+## `this`
+
+- `this` is used as a shortcut, a referent, that refers to an object, the subject in context, or the subject of the executing code
+- we use it for precision
+- `this` keyword contains the value of the object
+- functions in JS have properties, and when it executes, it gets the `this` property - a variable with the **value of the object that invokes the function where `this`is used**
+- in `strict mode`, `this` has the value of `undefined` in global functions and in anonymous functions that are not bound to any object
+- **`this` is not assigned a value until an object invokes the function where `this` is defined**
+- `this` has the value of the invoking object in most circumstances, howerver, there are few scenarios where `this` **does not**.
+- we can switch the context to another object by invoking the function with another object
+
+> [change-context.js]() - [this.spec.js]()
 ## References
 
 1. [JavaScript Variable Scope and Hoisting Explained](http://javascriptissexy.com/javascript-variable-scope-and-hoisting-explained/)
@@ -211,3 +223,4 @@ printStuff( 'Argument text', true );
 1. [What is a practical use for a closure in JavaScript?](http://stackoverflow.com/questions/2728278/what-is-a-practical-use-for-a-closure-in-javascript)
 1. [Practical Uses for Closures](https://medium.com/written-in-code/practical-uses-for-closures-c65640ae7304)
 1. [Why use "closure"?](http://howtonode.org/why-use-closure)
+1. [Understand JavaScript’s “this” With Clarity, and Master It](http://javascriptissexy.com/understand-javascripts-this-with-clarity-and-master-it/)
