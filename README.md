@@ -231,6 +231,67 @@ element.on( 'event', user.handler );
 element.on( 'event', user.handler.bind( user ));
 ```
 
+#### 2. Fix `this` inside closure
+
+```js
+var user = {
+  type    : 'Adm',
+  data    : [
+    { userName : 'Eric', id : 'a01' },
+    { userName : 'Douglas', id : 'a02' },
+    { userName : 'John', id : 'a03' }
+  ],
+  handler : function() {
+    var allUsersTypeAndId = [];
+    this
+      .data
+      .forEach( function( person ) {
+        allUsersTypeAndId.push(  person.id + this.type );
+      });
+
+    return allUsersTypeAndId;
+  }
+};
+
+var arr = user.handler();
+// ["a01undefined", "a02undefined", "a03undefined"]
+```
+
+> [live example](http://jsbin.com/luzesa/edit?js,console)
+
+Inside the anonymous function, `this` refer to the global object. If we run that example on the browser, that object will be the `window`object, running with Node.js `this` will point to the `global`object.
+
+The correct version of the previous code:
+
+```js
+var user = {
+  type    : 'Adm',
+  data    : [
+    { userName : 'Eric', id : 'a01' },
+    { userName : 'Douglas', id : 'a02' },
+    { userName : 'John', id : 'a03' }
+  ],
+  handler : function() {
+    var that = this;
+    var allUsersTypeAndId = [];
+    this
+      .data
+      .forEach( function( person ) {
+        allUsersTypeAndId.push(  person.id + that.type );
+      });
+
+    return allUsersTypeAndId;
+  }
+};
+
+var arr = user.handler();
+// ["a01Adm", "a02Adm", "a03Adm"]
+```
+
+Here we have saved the correct reference for `this`.
+
+[live example](http://jsbin.com/luzesa/edit?js,console)
+
 > [change-context.js](source/this/change-context.js) - [this.spec.js](source/test/this.spec.js)
 >
 > [this-in-callback.js](source/this/this-in-callback.js) - [this.spec.js](source/test/this.spec.js)
