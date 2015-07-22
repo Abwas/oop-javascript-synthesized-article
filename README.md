@@ -292,6 +292,27 @@ Here we have saved the correct reference for `this`.
 
 [live example](http://jsbin.com/rufaye/1/edit?js,console)
 
+#### 3. Fix `this` when method is assigned to a variable
+
+```js
+var data = [ /* some global data */ ]
+var user = {
+  data    : [ /* some data */ ],
+  handler : function() { 
+    /* do stuff */ 
+    return this.data[ randomNumber ];
+  }
+};
+
+var userData = user.handler();
+// [ /* some global data */ ]
+//`this` will be in the global context
+
+// Correct version
+var userData = user.handler.bind( user );
+```
+
+
 > [change-context.js](source/this/change-context.js) - [this.spec.js](source/test/this.spec.js)
 >
 > [this-in-callback.js](source/this/this-in-callback.js) - [this.spec.js](source/test/this.spec.js)
