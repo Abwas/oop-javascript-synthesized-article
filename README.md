@@ -290,7 +290,7 @@ var arr = user.handler();
 
 Here we have saved the correct reference for `this`.
 
-[live example](http://jsbin.com/luzesa/edit?js,console)
+[live example](http://jsbin.com/rufaye/1/edit?js,console)
 
 > [change-context.js](source/this/change-context.js) - [this.spec.js](source/test/this.spec.js)
 >
