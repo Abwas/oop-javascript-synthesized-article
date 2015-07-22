@@ -312,6 +312,40 @@ var userData = user.handler();
 var userData = user.handler.bind( user );
 ```
 
+#### 4. Fix `this` when borrowing methods
+
+How to properly borrow a method from another object
+
+```js
+var specificData = {
+  scores   : [ 131, 313, 626, 262 ],
+  avgScore : null
+};
+
+var generalData = {
+  scores   : [ 13, 39, 93 ],
+  avgScore : null,
+  calcAvg  : function() {
+    var sum = this.scores.reduce( function( prev, cur, index, array ) {
+      return prev + cur;
+    });
+    this.avgScore = sum / this.scores.length;
+  }
+};
+
+// Borrow a method
+// the first argument for `.apply` is the context that the function will be applied/called
+generalData.calcAvg.apply( specificData );
+
+console.log( specificData.avgScore );
+// 333
+console.log( generalData.avgScore );
+// null
+```
+
+> [live example](http://jsbin.com/wawigo/edit?js,console)
+
+#### More examples
 
 > [change-context.js](source/this/change-context.js) - [this.spec.js](source/test/this.spec.js)
 >
