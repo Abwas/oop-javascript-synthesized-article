@@ -213,6 +213,24 @@ printStuff( 'Argument text', true );
 - `this` has the value of the invoking object in most circumstances, howerver, there are few scenarios where `this` **does not**.
 - we can switch the context to another object by invoking the function with another object
 
+### When `this` is most misunderstood
+
+#### 1. Callback
+
+```js
+var user = {
+  data    : [ /* some data */ ],
+  handler : function() { /* do stuff */ }
+};
+
+// cannot read properties of user
+// this appoints to `element`
+element.on( 'event', user.handler );
+
+// Solution: bind `.handler()` to the correct object
+element.on( 'event', user.handler.bind( user ));
+```
+
 > [change-context.js](source/this/change-context.js) - [this.spec.js](source/test/this.spec.js)
 >
 > [this-in-callback.js](source/this/this-in-callback.js) - [this.spec.js](source/test/this.spec.js)
