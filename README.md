@@ -33,8 +33,6 @@ You **should pay attention** in basically 3 parts:
 
 **Enjoy the <strike>puzzle</strike> article! B-)**
 
-> See more **[here](https://medium.com/@ericdouglas_/why-i-chose-github-repositories-for-code-articles-d72d9c1034e6)**
-
 ## Variable Scope
 
 - Is the context in which the variables exists
